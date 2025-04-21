@@ -20,7 +20,6 @@ currencies.forEach(currency => {
     // Set the default "From" currency to "USD" and update the flag
     if (currency === "USD") {
         optionFrom.selected = true;
-        document.getElementById('firstImg').setAttribute('src', `https://flagsapi.com/US/flat/64.png`);
     }
     fromCurrencySelect.appendChild(optionFrom);
 
@@ -32,7 +31,6 @@ currencies.forEach(currency => {
     // Set the default "To" currency to "PKR" and update the flag
     if (currency === "PKR") {
         optionTo.selected = true;
-        document.getElementById('secondImg').setAttribute('src', `https://flagsapi.com/PK/flat/64.png`);
     }
     toCurrencySelect.appendChild(optionTo);
 });
